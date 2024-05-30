@@ -7,6 +7,11 @@ export interface UserType {
   avatar: string;
 }
 
+export interface ApiResponse {
+  data: UserType[];
+  total_pages: number;
+}
+
 // Type for props in User component
 export interface UserPropsType {
   id: number;

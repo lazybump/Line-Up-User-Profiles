@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { ContainerStyles } from "./NotFound.styles";
 
 const NotFound = () => {
   return (
@@ -9,13 +9,5 @@ const NotFound = () => {
     </ContainerStyles>
   );
 };
-
-const ContainerStyles = styled.div`
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 5;
-  text-align: center;
-  padding: 50px;
-`;
 
 export default NotFound;

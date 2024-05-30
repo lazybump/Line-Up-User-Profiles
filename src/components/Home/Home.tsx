@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { ContainerStyles } from "./Home.styes";
 
-// Very basic homepage
 const Home = () => {
   return (
     <ContainerStyles>
@@ -12,12 +11,5 @@ const Home = () => {
     </ContainerStyles>
   );
 };
-
-const ContainerStyles = styled.div`
-  font-weight: bold;
-  line-height: 5;
-  text-align: center;
-  padding: 50px;
-`;
 
 export default Home;
