@@ -5,7 +5,6 @@ import { ButtonStyles, ImageStyles, UserStyles } from "./User.styles";
 const User = ({ id, avatar }: UserPropsType) => {
   return (
     <UserStyles>
-      {/* Alters the URL and navigates to path for the UserDetails component */}
       <Link to={`/users/${id}`}>
         <ButtonStyles>
           <ImageStyles src={avatar} alt="" />

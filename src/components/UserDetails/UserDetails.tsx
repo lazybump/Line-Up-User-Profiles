@@ -1,4 +1,4 @@
-import { useUserDetails } from "../hooks/useUserDetails";
+import { useUserDetails } from "../../hooks/useUserDetails";
 import {
   ImageStyles,
   ProfileStyles,

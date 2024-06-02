@@ -1,8 +1,8 @@
 import { UserType } from "../../types";
 import User from "../User/User";
 import Pagination from "../Pagination/Pagination";
-import { ListContainer } from "./UserList.styles";
-import { useUsers } from "../hooks/useUsers";
+import { ListContainer, MainContainer } from "./UserList.styles";
+import { useUsers } from "../../hooks/useUsers";
 
 const UserList = () => {
   const { isLoading, users, error, currentPage, decrementPage, incrementPage } =
@@ -14,7 +14,7 @@ const UserList = () => {
     return <h2>An error has occured: {error.message}</h2>;
 
   return (
-    <div>
+    <MainContainer>
       <ListContainer>
         {users?.data.map((user: UserType) => (
           <User key={user.id} {...user} />
@@ -26,7 +26,7 @@ const UserList = () => {
         decrementPage={decrementPage}
         incrementPage={incrementPage}
       />
-    </div>
+    </MainContainer>
   );
 };
 

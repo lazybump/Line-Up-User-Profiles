@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
-export const ListContainer = styled.ul`
+export const MainContainer = styled.main`
   display: flex;
-  list-style: none;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+`;
+
+export const ListContainer = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60rem;
+  list-style: none;
 `;

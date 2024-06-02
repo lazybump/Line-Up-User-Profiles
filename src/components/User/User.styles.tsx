@@ -5,6 +5,7 @@ export const UserStyles = styled.li`
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 1rem 2rem 1rem;
 `;
 
 export const ButtonStyles = styled.button`
